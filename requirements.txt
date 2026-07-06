@@ -1,0 +1,5 @@
+pandas
+requests
+os
+python--dotenv
+time
