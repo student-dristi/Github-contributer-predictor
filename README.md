@@ -1,1 +1,1 @@
-# Github-contributer-predictor
+# Github-longterm-contributer-predictor

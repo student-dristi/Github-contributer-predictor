@@ -1,5 +1,8 @@
 pandas
 requests
-os
-python--dotenv
-time
+python-dotenv
+xgboost
+scikit-learn
+pandas
+matplotlib
+seaborn

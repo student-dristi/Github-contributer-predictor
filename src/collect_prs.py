@@ -3,7 +3,7 @@ import os
 import requests
 import time
 import pandas as pd
-url=url = "https://api.github.com/repos/pandas-dev/pandas/pulls"
+url="https://api.github.com/repos/pandas-dev/pandas/pulls"
 load_dotenv()
 
 token = os.getenv("GITHUB_TOKEN")
