@@ -2,7 +2,7 @@
 
 Predicting, from a contributor's earliest pull requests, whether they'll go on to become a **long-term contributor** to the `pandas` repository.
 
-![alt text](image.png)
+![image to explain the process](<ChatGPT Image Jul 14, 2026, 09_48_30 PM.png>)
 
 ## Motivation
 
