@@ -2,8 +2,6 @@
 
 Predicting, from a contributor's earliest pull requests, whether they'll go on to become a **long-term contributor** to the `pandas` repository.
 
-![image to explain the process](<ChatGPT Image Jul 14, 2026, 09_48_30 PM.png>)
-
 ## Motivation
 
 Open-source maintainers rarely know, early on, which new contributors are worth investing mentorship time in. This project asks: **can we predict long-term engagement from just a contributor's first few PRs** — before their trajectory is obvious? A model like this could help maintainers prioritize onboarding/mentoring effort, or serve as a case study in early-signal prediction problems (structurally similar to customer churn prediction).
@@ -78,7 +76,7 @@ Final model: tuned XGBoost, unweighted, evaluated once on the held-out test set 
 
 ## Explainability
 
-SHAP was used to interpret the final model's predictions. `author_association` was the strongest predictor overall — contributors already marked `MEMBER` by their 3rd PR showed a near-perfect (20/20) association with the long-term label in EDA, which SHAP confirmed as the dominant signal.
+SHAP analysis identified `avg_days_between_prs` as the strongest predictor overall. Contributors submitting pull requests with shorter intervals were substantially more likely to be classified as future long-term contributors. Repository association `author_association` provided additional predictive signal, particularly for established repository members.
 
 ## Limitations
 
